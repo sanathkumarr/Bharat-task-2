@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project Management and Communication</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Project Management</h1>
+    </header>
+    <main>
+        <section id="about" class="colored-section">
+            <h2>About Us</h2>
+            <p>This is a brief description of our project management and communication website.</p>
+        </section>
+        <section id="projects" class="colored-section">
+            <h2 class="section-heading">Projects</h2>
+            <form id="project-form">
+                <input type="text" id="project-name" class="app-input" placeholder="Project name" required>
+                <button type="button" class="app-button project-button" id="create-project">Create Project</button>
+            </form>
+        
+            <!-- Container for displaying project details (initially hidden) -->
+            <div id="project-details" class="project-details">
+                <h3 class="section-subheading">Project Details</h3>
+                <p id="project-name-display" class="project-name-display"></p>
+            </div>
+        
+            <h3 class="section-subheading">Project Tasks</h3>
+            <form id="task-form">
+                <input type="text" id="task-name" class="app-input" placeholder="Task name" required>
+                <input type="text" id="assignee" class="app-input" placeholder="Assign to" required>
+                <button type="submit" class="app-button task-button">Add Task</button>
+            </form>
+            <ul id="task-list">
+                <!-- Tasks will be displayed here -->
+            </ul>
+        </section>
+        
+        <section id="chat" class="colored-section">
+            <h2 class="section-heading">Chat</h2>
+            <div id="chat-box">
+                <!-- Chat messages will be displayed here -->
+            </div>
+            <form id="chat-form">
+                <input type="text" id="message" class="app-input" placeholder="Type your message" required>
+                <button type="submit" class="app-button chat-button">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023 Project Management and Communication
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
